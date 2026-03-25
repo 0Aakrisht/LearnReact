@@ -1,8 +1,10 @@
-import ToDolist from "./components/ToDoList";
+import ToDoList from "./components/UseState/ToDoList";
 
 const App = () => {
-  return <div>
-    <ToDolist/>
-  </div>
-}
-export default App ;
+  return (
+    <>
+      <ToDoList />
+    </>
+  );
+};
+export default App;
