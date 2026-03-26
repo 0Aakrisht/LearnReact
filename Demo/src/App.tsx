@@ -1,9 +1,9 @@
-import ToDoList from "./components/UseState/ToDoList";
+import DocumentTitleUpdater from "./components/useEffect/DocumentTitleUpdater";
 
 const App = () => {
   return (
     <>
-      <ToDoList />
+      <DocumentTitleUpdater />
     </>
   );
 };

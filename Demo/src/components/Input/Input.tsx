@@ -1,21 +1,17 @@
 import { useState } from "react";
 
 const ControlledInput = () => {
-  const [value, setValue] = useState<string>(""); // TypeScript: value is a string
-
-  const handleChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    setValue(event.target.value);
-  };
+  const [input, setInput] = useState("");
 
   return (
     <div>
       <input
         type="text"
-        value={value}          // controlled by React state
-        onChange={handleChange} // update state on input change
-        placeholder="Enter your name"
+        placeholder="enter anything..."
+        onChange={(e) => setInput(e.target.value)}
+        value={input}
       />
-      <p>You typed: {value}</p>
+      <p>{input}</p>
     </div>
   );
 };
